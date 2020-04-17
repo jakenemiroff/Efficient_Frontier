@@ -56,7 +56,6 @@ portfolio = {'Returns': portfolio_returns,
 
 # extend original dictionary to accomodate each ticker and weight in the portfolio
 for counter, ticker in enumerate(selected):
-    print(counter)
     portfolio[ticker + ' Weight'] = [Weight[counter] for Weight in stock_weights]
 
 # make a nice dataframe of the extended dictionary
@@ -84,4 +83,3 @@ plt.show()
 
 # print the details of the max sharpe portfolio
 print(sharpe_portfolio.T)
-
